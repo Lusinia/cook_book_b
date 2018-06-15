@@ -1,0 +1,62 @@
+{
+  "plugins": ["node"],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "rules": {
+    "node/exports-style": ["error", "module.exports"],
+    "node/no-deprecated-api": ["error", {
+      "ignoreModuleItems": [],
+      "ignoreGlobalItems": []
+    }],
+    "node/no-extraneous-require": ["error", {
+      "allowModules": []
+    }],
+    "no-console": 1,
+    "comma-dangle": 1,
+    "no-empty": 1,
+    "no-case-declarations": 1,
+    "no-irregular-whitespace": 1,
+    "no-unexpected-multiline": 1,
+    "semi": [
+      2,
+      "always"
+    ],
+    "no-unused-vars": 1,
+    "no-var": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "objectsInObjects": false
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "no-multi-spaces": 2
+  }
+}
