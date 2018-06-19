@@ -25,6 +25,7 @@ module.exports = {
       SPAGETTI: 'spagetti',
       CHEESE: 'cheese',
       PICKLES: 'pickles',
+      JEM: 'JEM',
       CREAM: 'cream'
     }
   }
