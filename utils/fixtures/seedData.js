@@ -6,6 +6,10 @@ const randomDate = () => new Date(new Date(2012, 0, 1).getTime() + Math.random()
 module.exports = [
   {
     name: 'Crock Pot Roast',
+    author: {
+      id: 'asfdausdgaoidufoia',
+      username: 'katya'
+    },
     imageURL: 'http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/27/20/8/picVfzLZo.jpg',
     ingredients: [ingredient.TOMATO, ingredient.MEAT],
     steps: [
@@ -18,13 +22,18 @@ module.exports = [
     date: randomDate(),
     categories: [categories.BARBECUE],
     rating: {
-      count: 223,
-      value: 4.5
+      count: 2,
+      value: 4.5,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Roasted Asparagus',
+    author: {
+      id: 's97df986s86f9',
+      username: 'Olya'
+    },
     imageURL: 'http://img.sndimg.com/food/image/upload/w_266/v1/img/recipes/50/84/7/picMcSyVd.jpg',
     ingredients: [ingredient.SPAGETTI, ingredient.CHICKEN],
     steps: [
@@ -43,13 +52,18 @@ module.exports = [
     date: randomDate(),
     categories: [categories.DISHES],
     rating: {
-      count: 123,
-      value: 3.3
+      count: 3,
+      value: 3.3,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Curried Lentils and Rice',
+    author: {
+      id: '5b28c3f774a73b0d7081fa33',
+      username: 'Lola'
+    },
     imageURL: 'http://dagzhsfg97k4.cloudfront.net/wp-content/uploads/2012/05/lentils3.jpg',
     ingredients: [ingredient.RICE, ingredient.CREAM, ingredient.TOMATO],
     steps: [
@@ -63,13 +77,18 @@ module.exports = [
     date: randomDate(),
     categories: [categories.DISHES],
     rating: {
-      count: 44,
-      value:5.0
+      count: 4,
+      value:5.0,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Big Night Pizza',
+    author: {
+      id: 'asfdausdgasdsdoidufoia',
+      username: 'Nina'
+    },
     imageURL: 'https://www.elementstark.com/woocommerce-extension-demos/wp-content/uploads/sites/2/2016/12/pizza.jpg',
     ingredients: [ingredient.CREAM, ingredient.MEAT, ingredient.CHEESE],
     steps: [
@@ -86,12 +105,17 @@ module.exports = [
     categories: [categories.BAKERY],
     rating: {
       count: 9,
-      value: 3.8
+      value: 3.8,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Cranberry and Apple Stuffed Acorn Squash Recipe',
+    author: {
+      id: '9sd7f0sadf9a8fd',
+      username: 'Sasha'
+    },
     imageURL: 'http://elanaspantry.com/wp-content/uploads/2008/10/acorn_squash_with_cranberry.jpg',
     ingredients: [ingredient.SUGAR, ingredient.CREAM, ingredient.JEM],
     steps: [
@@ -108,13 +132,18 @@ module.exports = [
     date: randomDate(),
     categories: [categories.BAKERY],
     rating: {
-      count: 99,
-      value: 3.2
+      count: 0,
+      value: 0,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Mic\'s Yorkshire Puds',
+    author: {
+      id: 'LKJdksjds9jds9',
+      username: 'Sergii'
+    },
     imageURL: 'http://upload.wikimedia.org/wikipedia/commons/f/f9/Yorkshire_Pudding.jpg',
     ingredients: [ingredient.CHEESE, ingredient.TOMATO],
     steps: [
@@ -132,13 +161,18 @@ module.exports = [
     date: randomDate(),
     categories: [categories.VEGANS],
     rating: {
-      count: 322,
-      value: 4.2
+      count: 2,
+      value: 4.2,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Old-Fashioned Oatmeal Cookies',
+    author: {
+      id: '87d897s8d7snf',
+      username: 'Oleg'
+    },
     imageURL: 'http://s3.amazonaws.com/gmi-digital-library/65caecf7-a8f7-4a09-8513-2659cf92871e.jpg',
     ingredients: [ingredient.CHEESE, ingredient.TOMATO],
     steps: [
@@ -157,13 +191,18 @@ module.exports = [
     date: randomDate(),
     categories: [categories.VEGANS],
     rating: {
-      count: 31,
-      value: 2.1
+      count: 5,
+      value: 2.1,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   },
   {
     name: 'Blueberry Oatmeal Squares',
+    author: {
+      id: 'ds87f89sdf',
+      username: 'Fostic'
+    },
     imageURL: 'http://www.theglowingfridge.com/wp-content/uploads/2016/06/SAM_3546.jpg',
     ingredients: [ingredient.CHEESE, ingredient.TOMATO],
     steps: [
@@ -180,8 +219,9 @@ module.exports = [
     date: randomDate(),
     categories: [categories.BAKERY],
     rating: {
-      count: 32,
-      value: 1.1
+      count: 9,
+      value: 1.1,
+      usersId: []
     },
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum'
   }

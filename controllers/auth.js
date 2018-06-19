@@ -3,53 +3,56 @@ const passport = require('passport');
 
 
 module.exports = {
-  register: (req, res) => {
+  register: async (req, res) => {
     try {
       const { username, password } = req.body;
-      User.findOne({ username }, (err, user) => {
-        if (err) {
-          return res.send('Find user error');
-        }
+      try {
+        const user = await User.findOne({ username });
         if (user) {
           return res.send('User is exists');
         } else {
           const newUser = new User({ username });
-          User.register(newUser, password, (err, user) => {
-            if (err) {
-              return res.send('Register user error');
-            }
+          try {
+            const result = await User.register(newUser, password);
             passport.authenticate('local')(req, res, () => {
               res.json({
                 message: 'New user was created successfully',
-                token: user._id
+                token: result._id
               });
             });
-          });
+          } catch (err) {
+            return res.send('Register user error');
+          }
         }
-      });
+      } catch (err) {
+        return res.send('Find user error');
+      }
     } catch (err) {
       console.error(err);
     }
   },
-  login: (req, res) => {
-    User.findOne({ username: req.body.username }, (err, user) => {
-        res.json({
-          message: 'User successfully logged in',
-          token: user._id });
-      }
-    );
+  login: async (req, res) => {
+    try {
+      const user = await  User.findOne({ username: req.body.username });
+      res.json({
+        message: 'User successfully logged in',
+        token: user._id
+      });
+    } catch (err) {
+      res.send('Login user error');
+    }
   },
   logout: (req, res) => {
     req.logout();
-    res.send('User is logged out')
+    res.send('User is logged out');
   },
-  user: (req, res) => {
-    User.findById(req.body.token, (err, user) => {
-      if (err) {
-        return res.send('Search user error');
-      }
+  user: async (req, res) => {
+    try {
+      const user = await User.findById(req.body.token);
       res.json({ user });
-    });
+    } catch (err) {
+      res.send('Search user error');
+    }
   },
 };
 

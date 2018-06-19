@@ -3,13 +3,10 @@ const Schema = mongoose.Schema;
 
 const recipeSchema = new Schema({
   id: String,
-  // author: {
-  //   id: {
-  //     type: mongoose.Schema.Types.ObjectId,
-  //     ref: 'User'
-  //   },
-  //   username: String
-  // },
+  author: {
+    id: String,
+    username: String
+  },
   name: { type: String, required: true, max: 20 },
   ingredients: Array,
   categories: Array,
