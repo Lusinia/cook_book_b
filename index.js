@@ -13,7 +13,7 @@ const User = require('./models/User');
 
 
 // Mongo connection
-const mongoDB = keys.mongoURI;
+const mongoDB =keys.mongoURI;
 
 mongoose.connect(mongoDB);
 mongoose.Promise = global.Promise;
